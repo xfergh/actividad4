@@ -70,9 +70,10 @@ def move():
 
     draw()
 
+    """Se realizaron cambios para que el juego nunca termine"""
     for target in targets:
         if not inside(target):
-            return
+            update()
 
     ontimer(move, 50)
 
